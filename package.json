@@ -1,0 +1,17 @@
+{
+  {
+    "name": "MVAD Electron 0.0",
+    "version": "0.0.1",
+    "description": "MVAD for the Electron Node.js framework",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": {
+      "name": ""
+    },
+    "dependencies": {
+      "electron": "3.0.6"
+    }
+  }
+}
