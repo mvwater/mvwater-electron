@@ -5,6 +5,7 @@
     <Name>mvwater-electron</Name>
     <RootNamespace>mvwater-electron</RootNamespace>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <NodeExePath>.\node_modules\electron\dist\electron.exe</NodeExePath>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -36,6 +37,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
+    <Content Include="preload.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="README.md" />
     <Content Include="renderer.js">
       <SubType>Code</SubType>

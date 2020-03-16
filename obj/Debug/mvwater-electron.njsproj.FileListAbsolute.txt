@@ -1,2 +1,4 @@
 C:\Users\skim2\source\repos\mvwater-electron\obj\Debug\mvwater-electron.njsprojAssemblyReference.cache
 C:\Users\skim2\source\repos\mvwater-electron\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\skim2\Documents\mvwater-electron\obj\Debug\mvwater-electron.njsprojAssemblyReference.cache
+C:\Users\skim2\Documents\mvwater-electron\bin\Microsoft.NodejsTools.WebRole.dll
