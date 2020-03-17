@@ -18,8 +18,28 @@
   "author": "skim,mbrydon,scanfield",
   "license": "Apache2",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/plugin-transform-arrow-functions": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
     "babel": "^6.23.0",
+    "babel-loader": "^8.0.5",
     "electron": "^8.1.1",
-    "electron-cgi": "^1.0.2"
-  }
+    "electron-cgi": "^1.0.2",
+    "electron-packager": "^13.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.16.4",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "tslint": "^5.13.1",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {}
 }
