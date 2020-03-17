@@ -126,6 +126,20 @@ function createWindow() {
     // mainWindow.webContents.openDevTools()
 }
 
+// Build the connection with C#
+let connection = new ConnectionBuilder()
+    .connectTo("dotnet", "run", "--project", "./core/Core")
+    .build();
+
+connection.onDisconnect = () => {
+    console.log("Connection dropped");
+};
+
+connection.send("greeting", "world from C#", (response: any) => {
+    console.log(response);
+    connection.close();
+});
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
