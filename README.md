@@ -1,5 +1,12 @@
 # MVAD for Electron
 
+---
+
+Build Status
+[![Build Status](https://travis-ci.org/mvwater/mvwater-electron.svg?branch=master)](https://travis-ci.org/mvwater/mvwater-electron)
+
+---
+
 A half-hearted attempt at Electron development for the MVAD project, which will (at some point) include a backend to do some processing with SQL.
 
 We don't suggest trying to clone this repository on a cell connection, since it's decidedly large.
