@@ -10,9 +10,32 @@ A half-hearted attempt at Electron development for the MVAD project. Likely to b
 
 ## Dependencies
 
+- For building: Visual Studio (NOT Code) 2019
 - Node.js
 - Node package manager (NPM)
-- Electron JavaScript Library (electronjs)
+- The following npm packages (also found in the package.json file, along with the right version numbers)
+  + `@babel/cli`
+  + `@babel/core`
+  + `@babel/plugin-proposal-class-properties`
+  + `@babel/plugin-transform-arrow-functions`
+  + `@babel/preset-env`
+  + `@babel/preset-react`
+  + `@babel/preset-typescript`
+  + `@types/react`
+  + `@types/react-dom`
+  + `babel`
+  + `babel-loader`
+  + `electron`
+  + `electron-cgi`
+  + `electron-packager`
+  + `html-webpack-plugin`
+  + `prettier`
+  + `react`
+  + `react-dom`
+  + `tslint`
+  + `typescript`
+  + `webpack`
+  + `webpack-cli`
 
 ## To Install
 
