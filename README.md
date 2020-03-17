@@ -1,6 +1,8 @@
 # MVAD for Electron
 
-A half-hearted attempt at Electron development for the MVAD project. Likely to be archived and abandoned.
+A half-hearted attempt at Electron development for the MVAD project, which will (at some point) include a backend to do some processing with SQL.
+
+We don't suggest trying to clone this repository on a cell connection, since it's decidedly large.
 
 ## Specifications
 
@@ -40,3 +42,16 @@ A half-hearted attempt at Electron development for the MVAD project. Likely to b
 ## To Install
 
 No installer is provided. Because this project is still in its infancy, it has no official documentation.
+
+## To Use this Repository
+
+To clone and run this repository, you'll need Git, Visual Studio (not Code, get Community instead) 2019, Node.js and npm installed on your computer.
+
+From your command line:
+
+```
+# Clone this repository
+git clone https://github.com/mvwater/mvwater-electron.git
+```
+
+Open the `.sln` file in your local version, which should open Visual Studio. If not, please check your default file associations.
