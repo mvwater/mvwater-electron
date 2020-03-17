@@ -1,6 +1,13 @@
 # MVAD for Electron
 
-A half-hearted attempt at Electron development for the MVAD project, which will (at some point) include a backend to do some processing with SQL.
+---
+
+Build Status
+
+[![Build Status](https://travis-ci.org/mvwater/mvwater-electron.svg?branch=master)](https://travis-ci.org/mvwater/mvwater-electron)
+
+---
+A version of the MVAD software system that uses the Electron framework for X-plat compatibility, which will (at some point) include a backend to do some processing with SQL.
 
 We don't suggest trying to clone this repository on a cell connection, since it's decidedly large.
 
@@ -42,6 +49,8 @@ We don't suggest trying to clone this repository on a cell connection, since it'
 ## To Install
 
 No installer is provided. Because this project is still in its infancy, it has no official documentation.
+
+In the future, installation must be carried out using an installer, using a tool like Inno Setup to create an end-user runnable executable file.
 
 ## To Use this Repository
 
