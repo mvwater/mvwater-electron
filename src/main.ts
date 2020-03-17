@@ -7,8 +7,57 @@ import { app, BrowserWindow, Menu } from "electron";
 
 const isMac = process.platform === 'darwin'; //because thanks apple, you're so special
 
+const menutemplate: Electron.MenuItemConstructorOptions[] = [{
+    // { role: 'appMenu' }
+    ...(isMac ? [{
+        label: app.name,
+        submenu: [
+            { role: 'about' },
+            { type: 'separator' },
+            { role: 'services' },
+            { type: 'separator' },
+            { role: 'hide' },
+            { role: 'hideothers' },
+            { role: 'unhide' },
+            { type: 'separator' },
+            { role: 'quit' }
+        ]
+    }] : []),
+    label: 'Edit',
+    submenu: [
+        { role: 'undo' },
+        { role: 'redo' },
+        { type: 'separator' },
+        { role: 'cut' },
+        { role: 'copy' },
+        { role: 'paste' },
+        { role: 'delete' }
+    ]
+},
+{
+    label: 'View',
+    submenu: [
+        { role: 'reload' },
+        { type: 'separator' },
+        { type: 'separator' },
+        { role: 'togglefullscreen' }
+    ]
+},
+{ role: 'window', submenu: [{ role: 'minimize' }, { role: 'close' }] },
+{
+    role: 'help',
+    submenu: [{
+        label: 'Learn More',
+        click() {
+            require('electron').shell.openExternal('https://electron.atom.io');
+        }
+    }]
+}
+];
+
+/*
 //make the template for the menu bar
-const template = [
+const menutemplate = [
     // { role: 'appMenu' }
     ...(isMac ? [{
         label: app.name,
@@ -104,9 +153,10 @@ const template = [
         ]
     }
 ]
+*/
 
 //display the menubar declared above
-const menu = Menu.buildFromTemplate(template);
+const menu = Menu.buildFromTemplate(menutemplate);
 Menu.setApplicationMenu(menu);
 
 let window: BrowserWindow | null;
