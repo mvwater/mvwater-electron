@@ -40,6 +40,7 @@
     <Content Include="preload.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="program.cs" />
     <Content Include="README.md" />
     <Content Include="renderer.js">
       <SubType>Code</SubType>
