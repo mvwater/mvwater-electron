@@ -6,6 +6,9 @@
     <RootNamespace>mvwater-electron</RootNamespace>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
     <NodeExePath>.\node_modules\electron\dist\electron.exe</NodeExePath>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -13,7 +16,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>17197fc7-eb11-4896-91c3-1e2759b005d9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>main.js</StartupFile>
+    <StartupFile>src\main.ts</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -30,7 +33,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="index.html">
+    <Content Include="core\Core\Core.csproj" />
+    <Content Include="src\index.html">
       <SubType>Code</SubType>
     </Content>
     <Content Include="main.js">
@@ -40,10 +44,35 @@
     <Content Include="preload.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="core\Core\program.cs" />
     <Content Include="README.md" />
     <Content Include="renderer.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="tsconfig.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="tslint.json">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="core\" />
+    <Folder Include="core\Core\" />
+    <Folder Include="src\" />
+    <Folder Include="src\app\" />
+    <Folder Include="src\app\components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\components\Dashboard.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\app\renderer.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\main.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
