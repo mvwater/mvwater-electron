@@ -9,6 +9,16 @@
     "clean": "tsc --build --clean",
     "package-win": "electron-manager . electron-demo --overwrite --asar=true --platform=x64 --arch=amd64 --prune=true"
   },
+  "configurations": {
+    "name": "mvad-electron",
+    "type": "node",
+    "request": "launch",
+    "program": "${workspaceRoot}/src/main.ts",
+    "stopOnEntry": false,
+    "args": [],
+    "cwd": "${workspaceRoot}",
+    "preLaunchTask": null
+  },
   "repository": "https://github.com/mvwater/mvwater-electron",
   "keywords": [
     "Electron",
