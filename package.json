@@ -2,7 +2,7 @@
   "name": "mvad-electron",
   "version": "1.0.0",
   "description": "A minimal Electron application",
-  "main": "src/app/main.ts",
+  "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "tsc --build",
@@ -13,20 +13,13 @@
     "name": "mvad-electron",
     "type": "node",
     "request": "launch",
-    "program": "${workspaceRoot}/src/main.ts",
+    "program": "${workspaceRoot}/main.js",
     "stopOnEntry": false,
     "args": [],
     "cwd": "${workspaceRoot}",
     "preLaunchTask": null
   },
   "repository": "https://github.com/mvwater/mvwater-electron",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
   "author": "skim,mbrydon,scanfield",
   "license": "Apache2",
   "devDependencies": {

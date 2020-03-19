@@ -1,19 +1,41 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>MVAD Version Electron 0.0.1</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>MVAD Electron v.0.0.1.1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div style="margin-top: 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>MVAD</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <h4>Start</h4>
+                    <ul>
+                        <li class="startoption"><i class="fa fa-cog" style="margin-right: 10px;"></i>Configure</li>
+                        <li class="startoption"><i class="fa fa-search" style="margin-right: 10px;"></i>Search By Address</li>
+                        <li class="startoption"><i class="fa fa-search" style="margin-right: 10px;"></i>Search By Acct. No.</li>
+                        <li class="startoption"><i class="fa fa-close" style="margin-right: 10px;"></i>Exit</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xl-9">
+                    <p>Start by selecting an option from the left.<br>If you need to reconfigure your settings file, use the configuration tool.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -19,7 +19,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>17197fc7-eb11-4896-91c3-1e2759b005d9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\main.ts</StartupFile>
+    <StartupFile>main.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -37,6 +37,26 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="core\Core\Core.csproj" />
+    <Content Include="main.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\assets\bootstrap\css\bootstrap.min.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="src\assets\css\styles.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\assets\fonts\font-awesome.min.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="src\assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="src\assets\fonts\FontAwesome.otf" />
+    <Content Include="src\assets\js\jquery.min.js" />
     <Content Include="src\index.html">
       <SubType>Code</SubType>
     </Content>
@@ -62,6 +82,13 @@
     <Folder Include="src\" />
     <Folder Include="src\app\" />
     <Folder Include="src\app\components\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\assets\bootstrap\" />
+    <Folder Include="src\assets\bootstrap\css\" />
+    <Folder Include="src\assets\bootstrap\js\" />
+    <Folder Include="src\assets\fonts\" />
+    <Folder Include="src\assets\css\" />
+    <Folder Include="src\assets\js\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app\components\Dashboard.tsx">
