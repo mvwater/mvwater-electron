@@ -1,3 +1,7 @@
 language: node_js
 node_js:
   - 7
+notifications:
+  email:
+    recipients:
+      - kim3@kenyon.edu
